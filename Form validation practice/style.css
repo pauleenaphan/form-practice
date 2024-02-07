@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    background-color: black;
+    font-family: monospace;
+}
+
+input[type=text]:valid{
+    color: lightgreen;
+}
+
+input[type=text]:invalid{
+    color: red;
+}
+
+input[type=text], select{
+    font-size: 30px;
+    border-color: white;
+}
+
+select{
+    color: white;
+}
+form{
+    list-style-type: none;
+    text-align: left;
+    margin: 5% auto;
+    width: 25%;
+}
+
+li{
+    display: flex;
+    flex-direction: column;;
+    margin-bottom: 25px;
+}
+
+label{
+    color: #961b3e;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#submit{
+    color: white;
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+    border-style: none;
+}
+
+#submit:hover{
+    cursor: pointer;
+}
