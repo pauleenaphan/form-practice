@@ -48,7 +48,17 @@ zipcode.addEventListener('input', ()=>{
         FR:["^(F-)?\\d{5}$", "France ZIP must have 5 digits"]
     }
 
+    const reg = new RegExp(constraints[country.value][0])
 
+    // console.log(constraints[country.value][0])
+    if(zipcode.value.match(reg)){
+        console.log("zipcode match")
+        zipcode.setCustomValidity("");
+    }else{
+        console.log("zipcode not matched")
+        zipcode.setCustomValidity(constraints[country.value][1]);
+    }
+    zipcode.reportValidity();
 })
 
 //checks the whole form bebfore submitting
